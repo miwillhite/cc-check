@@ -1,0 +1,46 @@
+:root {
+  --main-bg-color: #fff2e3;
+  --success-color: #05c9bf;
+  --warning-color: #ff9663;
+  --button-border-radius: 30px;
+  --color-link: #f54fb0;
+}
+
+body {
+  background: var(--main-bg-color);
+}
+
+h1 {
+  color: #171717;
+  font-family: serif;
+}
+
+#credit-card-validator {
+  display: flex;
+  flex-direction: column;
+  background: #fcfefe;
+  max-width: 600px;
+  margin: 0 auto;
+  border-radius: 16px;
+}
+
+#credit-card-validator button {
+  align-self: flex-end;
+  padding: .5rem 1rem;
+  border-radius: var(--button-border-radius);
+}
+
+#credit-card-validator .result {
+  margin-top: 1rem;
+  padding: .5rem 1rem;
+  color: #fcfefe;
+  border-radius: var(--border-radius);
+}
+
+#credit-card-validator .result.success {
+  background: var(--success-color);
+}
+
+#credit-card-validator .result.failure {
+  background: var(--warning-color);
+}
